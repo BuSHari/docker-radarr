@@ -15,7 +15,7 @@ RUN \
  echo "**** install jq ****" && \
  apt-get update && \
  apt-get install -y \
-	jq && \
+	jq mkvtoolnix && \
  echo "**** install radarr ****" && \
  if [ -z ${RADARR_RELEASE+x} ]; then \
 	RADARR_RELEASE=$(curl -sX GET "https://api.github.com/repos/Radarr/Radarr/releases" \
